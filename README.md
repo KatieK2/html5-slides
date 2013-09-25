@@ -1,4 +1,7 @@
-<h1>HTML5 Slide Template, <a href="http://code.google.com/p/io-2012-slides">originally from Google IO</a></h1>
+<h1>HTML5 Slide Template</h1>
+[Originally from Google IO](http://code.google.com/p/io-2012-slides), and with an [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
+
+This is an HTML5 framework for a slideshow which can be presented through multiple browsers.
 
 ## Configuring the slides
 
@@ -54,6 +57,14 @@ run watch with the style output flag:
 
 The slides can be run locally from `file://` making development easy :)
 
+Press Enter, space, right arrow to advance; Backspace, left arrow to go back.
+
+Enter full-screen mode (F11 or Shift-Command-F) before presenting.
+
+You should be able to press Ctrl+R/F5 at any time to refresh without losing your place in the presentation.
+
+If an iframe steals your focus and you can’t advance any more, please click outside the slide on the background to give the focus back to the presentation. 
+
 ### Running from a web server
 
 If at some point you should need a web server, use [`serve.sh`](serve.sh). It will
@@ -76,7 +87,3 @@ To enable presenter mode, add `presentme=true` to the URL: [http://localhost:800
 To disable presenter mode, hit [http://localhost:8000/template.html?presentme=false](http://localhost:8000/template.html?presentme=false)
 
 Presenter mode is sticky, so refreshing the page will persist your settings.
-
----
-
-That's all she wrote!
