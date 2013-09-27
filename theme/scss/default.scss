@@ -2,7 +2,7 @@
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
 
-$title: 'title';  //   content: "#yourhashtag";
+$title: 'Your Title Here';  //   $content: "#yourhashtag";
 $brand-small-icon-size: 30px;
 
 $gray-1: #e6e6e6;
@@ -170,7 +170,7 @@ slides > slide {
 
     &:before {
       font-size: 12pt;
-      content: $social-tags;
+      content: $title;
       position: absolute;
       bottom: $slide-top-bottom-padding / 2;
       left: $slide-left-right-padding;
