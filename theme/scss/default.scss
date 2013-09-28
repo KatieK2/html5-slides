@@ -379,14 +379,21 @@ pre {
     content: attr(data-lang);
     background-color: $gray-2;
     right: 0;
-    top: 0em;
+    top: -1.5em;
     position: absolute;
     font-size: 16pt;
     color: white;
     padding: 2px 25px;
     text-transform: uppercase;
+
+    .smaller & {
+      top: -1.1em;
+    }
   }
 
+  & + & {
+    margin-top: 2.5em;
+  }
 }
 
 pre[data-lang="go"] {
