@@ -266,8 +266,12 @@ slides.layout-faux-widescreen {
   }
 }
 
-b {
+b, strong {
   font-weight: 600;
+}
+
+em {
+  font-style: italic;
 }
 
 a {
@@ -298,6 +302,16 @@ h3 {
   font-weight: inherit;
   color: $gray-3;
 }
+
+dl {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+dt { @extend h3; font-weight: bold; }
+
+dd { @extend p; }
 
 ul {
   margin-left: 1.2em;
@@ -359,12 +373,20 @@ pre {
     content: attr(data-lang);
     background-color: $gray-2;
     right: 0;
-    top: 0;
+    top: -1.5em;
     position: absolute;
     font-size: 16pt;
     color: white;
     padding: 2px 25px;
     text-transform: uppercase;
+
+    .smaller & {
+      top: -1.1em;
+    }
+  }
+
+  & + & {
+    margin-top: 2.5em;
   }
 }
 
