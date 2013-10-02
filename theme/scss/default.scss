@@ -600,6 +600,32 @@ article.smaller {
   }
 }
 
+article.larger {
+  p, ul {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: 0;
+  }
+  table {
+    td, th {
+      font-size: 32px;
+    }
+  }
+  pre {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+  q {
+    font-size: 52px;
+    line-height: 60px;
+
+    &:before, &:after {
+      font-size: 72px;
+    }
+  }
+}
+
 /* Builds */
 
 .build {
