@@ -1,7 +1,27 @@
-<h1>HTML5 Slide Template</h1>
+#HTML5 Slide Template
 [Originally from Google IO](http://code.google.com/p/io-2012-slides), and with an [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
 
-This is an HTML5 framework for a slideshow which can be presented through multiple browsers.
+**[Live Demo here](https://rawgithub.com/KatieK2/html5-slides/master/template.html)**
+
+This is slideshow / presentation framework (built with HTML5, CSS and JS) which runs in a variety of modern web browsers.  Here's a sampling of features:
+
+ * Slides and images adjust to screen-width.
+ * Keyboard control for navigation and effects.
+ * In-slide revealable elements.
+ * Well designed code blocks with code highlights.
+ * Togglable speaker notes.
+
+## Running the slides
+
+The slides can be run locally from `file://` making development easy :)
+
+Press Enter, space, right arrow to advance; Backspace, left arrow to go back.
+
+Enter full-screen mode (F11 or Shift-Command-F) before presenting.
+
+You should be able to press Ctrl+R/F5 at any time to refresh without losing your place in the presentation.
+
+If an iframe steals your focus and you can’t advance any more, please click outside the slide on the background to give the focus back to the presentation. 
 
 ## Configuring the slides
 
@@ -53,19 +73,7 @@ run watch with the style output flag:
 
 *Note:* You should not need to edit [`_base.scss`](theme/scss/_base.scss).
 
-## Running the slides
-
-The slides can be run locally from `file://` making development easy :)
-
-Press Enter, space, right arrow to advance; Backspace, left arrow to go back.
-
-Enter full-screen mode (F11 or Shift-Command-F) before presenting.
-
-You should be able to press Ctrl+R/F5 at any time to refresh without losing your place in the presentation.
-
-If an iframe steals your focus and you can’t advance any more, please click outside the slide on the background to give the focus back to the presentation. 
-
-### Running from a web server
+##### Running from a web server
 
 If at some point you should need a web server, use [`serve.sh`](serve.sh). It will
 launch a simple one and point your default browser to [`http://localhost:8000/template.html`](http://localhost:8000/template.html):
@@ -77,7 +85,7 @@ You can also specify a custom port:
 
     $ ./serve.sh 8080
 
-### Presenter mode
+##### Presenter mode
 
 The slides contain a presenter mode feature (beta) to view + control the slides
 from a popup window.
