@@ -21,7 +21,7 @@ Enter full-screen mode (F11 or Shift-Command-F) before presenting.
 
 You should be able to press Ctrl+R/F5 at any time to refresh without losing your place in the presentation.
 
-If an iframe steals your focus and you can’t advance any more, please click outside the slide on the background to give the focus back to the presentation. 
+If an iframe steals your focus and you can't advance any more, please click outside the slide on the background to give the focus back to the presentation.
 
 ## Configuring the slides
 
@@ -33,7 +33,7 @@ general behavior.
 ### Customizing the slide titles
 
 The bottom of the slides include `title` by default. If you'd like to change this, please update the variable
- `$title: 'title';` in [`/theme/scss/default.scss`](theme/scss/default.scss) 
+ `$title: 'title';` in [`/theme/scss/default.scss`](theme/scss/default.scss)
 or change `content: "#yourhashtag";` [`/theme/css/default.css`](theme/scss/default.css).
 
 See the next section on "Editing CSS" before you go editing things.
@@ -62,12 +62,9 @@ and any new one you add:
     $ cd io-2012-slides
     $ compass watch
 
-This command automatically recompiles the .scss file when you make a change.
-Its corresponding .css file is output to [`/theme/css`](theme/css). Slick.
+This command automatically recompiles the .scss file when you make a change. Its corresponding .css file is output to [`/theme/css`](theme/css). Slick.
 
-By default, [`config.rb`](config.rb) in the main project folder outputs minified
-.css. It's a best practice after all! However, if you want unminified files,
-run watch with the style output flag:
+By default, [`config.rb`](config.rb) in the main project folder outputs minified .css. It's a best practice after all! However, if you want unminified files, run watch with the style output flag:
 
     compass watch -s expanded
 
@@ -75,8 +72,7 @@ run watch with the style output flag:
 
 ##### Running from a web server
 
-If at some point you should need a web server, use [`serve.sh`](serve.sh). It will
-launch a simple one and point your default browser to [`http://localhost:8000/template.html`](http://localhost:8000/template.html):
+If at some point you should need a web server, use [`serve.sh`](serve.sh). It will launch a simple one and point your default browser to [`http://localhost:8000/template.html`](http://localhost:8000/template.html):
 
     $ cd io-2012-slides
     $ ./serve.sh
@@ -87,8 +83,7 @@ You can also specify a custom port:
 
 ##### Presenter mode
 
-The slides contain a presenter mode feature (beta) to view + control the slides
-from a popup window.
+The slides contain a presenter mode feature (beta) to view + control the slides from a popup window.
 
 To enable presenter mode, add `presentme=true` to the URL: [http://localhost:8000/template.html?presentme=true](http://localhost:8000/template.html?presentme=true)
 
