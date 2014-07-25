@@ -153,7 +153,7 @@ slides > slide {
       position: absolute;
       bottom: $slide-top-bottom-padding / 2;
       left: $slide-left-right-padding;
-      padding-left: $brand-small-icon-size + 10;
+      // padding-left: $brand-small-icon-size + 10;
       height: $brand-small-icon-size;
       line-height: 1.9;
     }
@@ -167,18 +167,18 @@ slides > slide {
     }
   }
 
-  &.title-slide {
-    &:after {
-      content: '';
-      background: url(http://placekitten.com/405/100) no-repeat 100% 50%; // Logo on bottom right of title slide
-      @include background-size(contain);
-      position: absolute;
-      bottom: $slide-top-bottom-padding;
-      right: $slide-top-bottom-padding;
-      width: 100%;
-      height: 60px;
+  article img {
+    max-width: 100%;
+    max-height: 100%;
+    &.logo {
+      max-width: 400px;
+      float: right;
+      clear: both;
+      margin-bottom: 1.5em;
+      margin-left: 1em;
     }
   }
+
 
   &.backdrop {
     z-index: -10;
@@ -861,12 +861,6 @@ article.larger {
 }
 
 /* ===== SLIDE CONTENT ===== */
-.logoslide {
-  img {
-    width: 383px;
-    height: 92px;
-  }
-}
 
 .segue {
   padding: $slide-left-right-padding $slide-left-right-padding * 2;
@@ -1001,7 +995,7 @@ aside.gdbar {
       display: none !important;
     }
   }
-  
+
   slides {
     slide {
       &.backdrop {
