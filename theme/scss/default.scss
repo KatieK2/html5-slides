@@ -302,15 +302,13 @@ h1, h2, h3 {
 
 h2 {
   font-size: 45px;
-  line-height: 45px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   color: $gray-4;
 }
 
 h3 {
   font-size: 30px;
-  letter-spacing: -1px;
-  line-height: 2;
+  margin-top: .5em;
   font-weight: inherit;
   color: $gray-3;
 }
@@ -510,6 +508,11 @@ button:not(:disabled):active {
 
 .columns-2 {
   @include column-count(2);
+
+  pre:nth-of-type(2n) {
+    margin-left: 1.5em;
+    padding-left: 15px;
+  }
 }
 
 table {
@@ -878,6 +881,15 @@ article.larger {
   }
 }
 
+.segue.dark {
+  hgroup {
+    text-align: center;
+    width: 65%;
+    padding: 3em;
+    @include flex-center-center;
+  }
+}
+
 .thank-you-slide {
   background: $gray-4 !important;
   color: white;
@@ -935,9 +947,8 @@ aside.gdbar {
   }
 
   img {
-    width: 85px;
-    height: 85px;
-    position: absolute;
+    max-height: 85px;
+    float: right;
     right: 0;
     margin: 8px 15px;
   }
@@ -951,7 +962,7 @@ aside.gdbar {
     h1 {
       font-size: 65px;
       line-height: 1.4;
-      letter-spacing: -3px;
+      letter-spacing: -1px;
       color: $gray-4;
     }
 
@@ -1025,6 +1036,7 @@ aside.gdbar {
       &.current {
         opacity: 1;
       }
+
     }
   }
 
