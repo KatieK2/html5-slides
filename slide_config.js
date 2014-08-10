@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Title Goes Here<br>Up To Two Lines',
+    title: 'Title Goes Here<br>Up To Two Lines', // Also set the $title variable in default.scss, or the content specification in slides>slide:not(.nobackground):before in default.css
     subtitle: 'Subtitle Goes Here',
     //eventTitle: 'Google I/O 2013',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
