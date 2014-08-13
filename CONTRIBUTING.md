@@ -1,8 +1,8 @@
 #Contributing
 
-I welcome input - particularly enhancement requests and bug fixes.  
+I love pull requests!
 
- * Please let me know what you find missing, love or hate about this slideshow framework.
+ * If you just want to get started, have a look at the open enhancements and bugs in issues.
 
  * Pull requests / bug fixes: Clearly describe and demonstrate what's being addressed with example code.
 
