@@ -916,7 +916,6 @@ article.larger {
 }
 
 aside.gdbar {
-  height: 97px;
   width: 215px;
   position: absolute;
   left: -1px;
@@ -945,10 +944,9 @@ aside.gdbar {
   }
 
   img {
-    max-height: 85px;
     float: right;
     right: 0;
-    margin: 8px 15px;
+    margin: 15px;
   }
 
   aside.gdbar {
