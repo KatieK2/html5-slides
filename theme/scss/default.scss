@@ -179,6 +179,19 @@ slides > slide {
     }
   }
 
+  article > figure {
+    width: 65%;
+    float: right;
+    margin-left: 1em;
+    text-align: right;
+    figcaption {
+      font-size: 50%;
+      color: $gray-2;
+      font-style: italic;
+      margin-top: .5em;
+      text-align: right;
+    }
+  }
 
   &.backdrop {
     z-index: -10;
