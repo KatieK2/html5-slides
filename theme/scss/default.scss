@@ -180,16 +180,21 @@ slides > slide {
   }
 
   article figure {
-    width: 65%;
-    float: right;
-    margin-left: 1em;
-    text-align: right;
+    margin: .5rem auto;
+    &.right {
+      width: 60%;
+      float: right;
+      margin-left: 1em;
+    }
     figcaption {
       font-size: 50%;
       color: $gray-2;
       font-style: italic;
       margin-top: .5em;
       text-align: right;
+      a {
+        color: inherit;
+      }
     }
   }
 
