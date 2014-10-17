@@ -14,9 +14,9 @@ slides > slide {
     margin-top: -$slide-height / 2 !important;
   */
   -webkit-transition: none !important;
-  -webkit-transition: none !important;
   -moz-transition: none !important;
   -o-transition: none !important;
+  -webkit-transition: none !important;
   transition: none !important;
 }
 
