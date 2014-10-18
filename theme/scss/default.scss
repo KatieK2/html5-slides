@@ -975,10 +975,9 @@ article.larger {
 }
 
 aside.gdbar {
-  width: 215px;
   position: absolute;
-  left: -1px;
-  top: 125px;
+  left: 0;
+  top: 145px;
   @include border-radius(0 10px 10px 0);
   @include background(linear-gradient(left, $gray-1, $gray-1) no-repeat);
   @include background-size(0% 100%);

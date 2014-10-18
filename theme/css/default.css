@@ -1165,10 +1165,9 @@ article.larger q:before, article.larger q:after {
 }
 
 aside.gdbar {
-  width: 215px;
   position: absolute;
-  left: -1px;
-  top: 125px;
+  left: 0;
+  top: 145px;
   -moz-border-radius: 0 10px 10px 0;
   -webkit-border-radius: 0;
   border-radius: 0 10px 10px 0;
