@@ -590,29 +590,34 @@ q {
   }
 }
 
-// blockquote {
-//   padding: .75em;
-//   margin: 1rem;
-//   quotes: "“""”""‘""’  ";
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D";
 
-//   &:before, &:after {
-//     content: open-quote;
-//     font-size: 4em;
-//     line-height: .1em;
-//     vertical-align: -.4em;
-//   }
+  &:before, &:after {
+    color: $gray-2;
+    content: open-quote;
+    font-size: 3em;
+    position: relative;
+    top: .5em;
+    left: -.35em;
+    line-height: 0.1em;
+  }
 
-//   &:after  {
-//     content: close-quote;
-//   }
+  &:after {
+    content: close-quote;
+    float: right;
+    top: -.4em;
+    left: 0;
+  }
 
   cite {
     @include cite;
-    margin-top: 2.5rem;
-    position: absolute;
-    left: 6rem;
+    font-size: 150%;
   }
-// }
+
+}
 
 slide.fill {
   background-repeat: no-repeat;

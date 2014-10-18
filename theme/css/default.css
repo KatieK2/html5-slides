@@ -717,17 +717,35 @@ q:after {
   margin-left: 0.1em;
 }
 
-cite {
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”";
+}
+blockquote:before, blockquote:after {
+  color: #a9a9a9;
+  content: open-quote;
+  font-size: 3em;
+  position: relative;
+  top: .5em;
+  left: -.35em;
+  line-height: 0.1em;
+}
+blockquote:after {
+  content: close-quote;
+  float: right;
+  top: -.4em;
+  left: 0;
+}
+blockquote cite {
   font-size: 50%;
   color: #a9a9a9;
   font-style: italic;
   margin-top: .5em;
   text-align: right;
-  margin-top: 2.5rem;
-  position: absolute;
-  left: 6rem;
+  font-size: 150%;
 }
-cite a {
+blockquote cite a {
   color: inherit;
 }
 
