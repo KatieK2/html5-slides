@@ -707,12 +707,12 @@ q {
   line-height: 72px;
 }
 q:before {
-  content: 'ΓÇ£';
+  content: '“';
   position: absolute;
   margin-left: -0.5em;
 }
 q:after {
-  content: 'ΓÇ¥';
+  content: '”';
   position: absolute;
   margin-left: 0.1em;
 }
