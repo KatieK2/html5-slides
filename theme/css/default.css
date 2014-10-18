@@ -717,6 +717,20 @@ q:after {
   margin-left: 0.1em;
 }
 
+cite {
+  font-size: 50%;
+  color: #a9a9a9;
+  font-style: italic;
+  margin-top: .5em;
+  text-align: right;
+  margin-top: 2.5rem;
+  position: absolute;
+  left: 6rem;
+}
+cite a {
+  color: inherit;
+}
+
 slide.fill {
   background-repeat: no-repeat;
   -moz-border-radius: 5px;
@@ -1248,6 +1262,7 @@ aside.gdbar aside.gdbar {
   color: #e6e6e6;
 }
 .quote .author {
+  font-style: italic;
   font-size: 24px;
   position: absolute;
   bottom: 80px;

@@ -606,12 +606,12 @@ q {
 //     content: close-quote;
 //   }
 
-//   cite {
-//     @include cite;
-//     margin-top: 2.5rem;
-//     position: absolute;
-//     left: 6rem;
-//   }
+  cite {
+    @include cite;
+    margin-top: 2.5rem;
+    position: absolute;
+    left: 6rem;
+  }
 // }
 
 slide.fill {
@@ -1051,6 +1051,7 @@ aside.gdbar {
   color: $gray-1;
 
   .author {
+    font-style: italic;
     font-size: 24px;
     position: absolute;
     bottom: 80px;
