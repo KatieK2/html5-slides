@@ -293,6 +293,10 @@ slides > slide article figure.right {
   width: 60%;
   float: right;
   margin-left: 1em;
+  text-align: right;
+}
+slides > slide article figure img {
+  max-height: 490px;
 }
 slides > slide article figure figcaption {
   font-size: 50%;

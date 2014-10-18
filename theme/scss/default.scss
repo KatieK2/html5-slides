@@ -197,6 +197,10 @@ slides > slide {
       width: 60%;
       float: right;
       margin-left: 1em;
+      text-align: right;
+    }
+    img {
+      max-height: 490px;
     }
     figcaption {
       @include cite;
