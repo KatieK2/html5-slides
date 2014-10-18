@@ -1,3 +1,5 @@
+// @charset "UTF-8";
+
 @import "base";
 @import "compass/css3/columns";
 @import "compass/css3/user-interface";
@@ -50,6 +52,16 @@ $article-content-top-padding: 45px;
   background-color: white;
 }
 
+@mixin cite {
+  font-size: 50%;
+  color: $gray-2;
+  font-style: italic;
+  margin-top: .5em;
+  text-align: right;
+  a {
+    color: inherit;
+  }
+}
 
 
 /**
@@ -187,14 +199,7 @@ slides > slide {
       margin-left: 1em;
     }
     figcaption {
-      font-size: 50%;
-      color: $gray-2;
-      font-style: italic;
-      margin-top: .5em;
-      text-align: right;
-      a {
-        color: inherit;
-      }
+      @include cite;
     }
   }
 
@@ -585,6 +590,30 @@ q {
   }
 }
 
+// blockquote {
+//   padding: .75em;
+//   margin: 1rem;
+//   quotes: "“""”""‘""’  ";
+
+//   &:before, &:after {
+//     content: open-quote;
+//     font-size: 4em;
+//     line-height: .1em;
+//     vertical-align: -.4em;
+//   }
+
+//   &:after  {
+//     content: close-quote;
+//   }
+
+//   cite {
+//     @include cite;
+//     margin-top: 2.5rem;
+//     position: absolute;
+//     left: 6rem;
+//   }
+// }
+
 slide.fill {
   background-repeat: no-repeat;
   @include border-radius($slide-border-radius);
@@ -923,6 +952,18 @@ article.larger {
   a {
     color: inherit;
     border-bottom: none;
+  }
+
+  figure {
+    max-height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
   }
 
   > p {
