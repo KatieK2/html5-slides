@@ -1185,6 +1185,16 @@ article.larger q:before, article.larger q:after {
   max-width: 100%;
   max-height: 100%;
 }
+.thank-you-slide figure figcaption {
+  font-size: 50%;
+  color: #a9a9a9;
+  font-style: italic;
+  margin-top: .5em;
+  text-align: right;
+}
+.thank-you-slide figure figcaption a {
+  color: inherit;
+}
 .thank-you-slide > p, .thank-you-slide > dd {
   position: absolute;
   bottom: 80px;
