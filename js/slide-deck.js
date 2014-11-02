@@ -125,11 +125,11 @@ SlideDeck.prototype.addEventListeners_ = function() {
   //   'msTransition': 'MSTransitionEnd',
   //   'transition': 'transitionend'
   // };
-  // 
+  //
   // // Find the correct transitionEnd vendor prefix.
   // window.transEndEventName = transEndEventNames[
   //     Modernizr.prefixed('transition')];
-  // 
+  //
   // // When slides are done transitioning, kickoff loading iframes.
   // // Note: we're only looking at a single transition (on the slide). This
   // // doesn't include autobuilds the slides may have. Also, if the slide
@@ -349,7 +349,10 @@ SlideDeck.prototype.loadConfig_ = function(config) {
       var github = p.github ? '<span>github</span><a href="' + p.github +
           '">' + p.github.replace(/https?:\/\//, '') + '</a>' : '';
 
-      var html2 = [gplus, twitter, www, github].join('<br>');
+      var link = p.link ? '<span>link </span><a href="' + p.link +
+          '">' + p.link.replace(/https?:\/\//, '') + '</a>' : '';
+
+      var html2 = [gplus, twitter, www, github, link].join('<br>');
 
       if (dataConfigContact) {
         dataConfigContact.innerHTML = html2;
@@ -563,7 +566,7 @@ SlideDeck.prototype.updateSlides_ = function(opt_dontPush) {
   this.triggerSlideEvent('slideenter', curSlide);
 
 // window.setTimeout(this.disableSlideFrames_.bind(this, curSlide - 2), 301);
-// 
+//
 // this.enableSlideFrames_(curSlide - 1); // Previous slide.
 // this.enableSlideFrames_(curSlide + 1); // Current slide.
 // this.enableSlideFrames_(curSlide + 2); // Next slide.
