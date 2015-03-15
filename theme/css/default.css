@@ -437,6 +437,9 @@ h3, dt {
   font-weight: inherit;
   color: #797979;
 }
+article h3, article dt {
+  margin-bottom: 1rem;
+}
 
 dl {
   -moz-column-count: 2;
