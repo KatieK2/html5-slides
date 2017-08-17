@@ -1,4 +1,4 @@
-#HTML5 Slide Template
+# HTML5 Slide Template
 [Originally from Google IO](http://code.google.com/p/io-2012-slides), and with an [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
 
 **[Live Demo here](https://rawgithub.com/KatieK2/html5-slides/master/template.html)**
