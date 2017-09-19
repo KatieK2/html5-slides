@@ -205,6 +205,7 @@ SlideDeck.prototype.onBodyKeyDown_ = function(e) {
       break;
 
     case 72: // H: Toggle code highlighting
+    case 190: // .: Toggle code highlighting (Logitech R800)
       document.body.classList.toggle('highlight-code');
       break;
 
